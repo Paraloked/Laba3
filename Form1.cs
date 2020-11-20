@@ -142,7 +142,8 @@ namespace Laba3
 
         private void button6_Click(object sender, EventArgs e)
         {
-             var vp = "C:/Users/7777d/Documents/LR3.TXT";
+            String UserName = Environment.UserName;
+             var vp = "C:/Users/" +UserName+ "/Documents/LR3.TXT";
              File.WriteAllText(vp, textBox1.Text);
 
         }
